@@ -1,6 +1,8 @@
 <template>
  <div>
-
+   <div>
+     <img src="../assets/log.jpg" alt="" class="img">
+   </div>
  </div>
 </template>
 
@@ -33,5 +35,10 @@
 </script>
 
 <style scoped lang='scss'>
-
+.img {
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
 </style>

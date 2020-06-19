@@ -1,6 +1,8 @@
 <template>
  <div>
-
+   <div>
+     <img src="../assets/log.jpg" alt="">
+   </div>
  </div>
 </template>
 
