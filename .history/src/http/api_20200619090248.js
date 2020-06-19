@@ -84,95 +84,28 @@ export default {
         })
     },
     getCancelCollection(id) {
-        return service.post('/cancelCollection', {
+        return service.post('cancelCollection', {
             id
         })
     },
     getIsCollection(id) {
-        return service.post('/isCollection', {
+        return service.post('isCollection', {
             id
         })
     },
     getAddShop(id) {
-        return service.post('/addShop', {
+        return service.post('addShop', {
             id
         })
     },
 
     getLoginOut() {
-        return service.post('/loginOut')
+        return service.post('loginOut')
     },
     getQueryUser() {
-        return service.post('/queryUser')
+        return service.post('getQueryUser')
     },
-    getSaveUser() {
-        return service.post('/saveUser', {
-            year,
-            month,
-            day,
-            id,
-            nickname
-        })
+    getQueryUser() {
+        return service.post('getQueryUser')
     },
-    getMyOrder() {
-        return service.post('/myOrder/orderNum')
-    },
-    getGoodsOne() {
-        return service.post('/goodsOne/comment', {
-            id,
-            rate,
-            content,
-            anonymous,
-            _id,
-            order_id,
-            image
-        })
-    },
-    getSetDefaultAddress() {
-        return service.post('/setDefaultAddress',{
-            id
-        })
-    },
-    getName() {
-        return service.post('/address', {
-            name,
-            tel,
-            address,
-            isDefault,
-            province,
-            city,
-            county,
-            addressDetail,
-            areaCode,
-            id
-        })
-    },
-    getDeleteAddress() {
-        return service.post('/deleteAddress',{
-            id
-        })
-    },
-    getList() {
-        return service.post('/collection/list')
-    },
-    getRegister() {
-        return service.post('/register',{
-            nickname,
-            password,
-            verify
-        })
-    },
-    getLogin() {
-        return service.post('/login',{
-            nickname,
-            password,
-            verify
-        })
-    },
-    getEluateOne() {
-        return service.post('/evaluateOne',{
-            id,
-            _id
-        })
-    }
 }

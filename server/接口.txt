@@ -150,6 +150,7 @@ verify:验证码
 /tobeEvaluated
 
 30. 查询单条评论(post)
+/evaluateOne
 参数: 
 id:商品id
 _id:数据库的那条id
