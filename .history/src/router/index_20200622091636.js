@@ -1,0 +1,44 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import vant from 'vant';
+import api from '../http/api'
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(VueRouter)
+Vue.use(vant);
+vue.prototype.$api = api
+  const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    
+    component: () => import('../views/About')
+  },
+  {
+    path: '/details',
+    name: 'Details',
+    
+    component: () => import('../views/details/Details')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    
+    component: () => import('../views/login/Login')
+  }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+
+export default router
