@@ -39,7 +39,7 @@ Vue.use(VueRouter)
     path: '/personal Center',
     name: 'Personal Center',
     
-    component: () => import('../views/personal Center/Personal Center')
+    component: () => import('../views/personal Center/Personal Centerin')
   },
   {
     path: '/shopping Cart',

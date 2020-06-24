@@ -17,3 +17,53 @@ hostname: WIN-VGO38DSFRI3
 2020-06-23 08:55:51,620 INFO 7504 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
 2020-06-23 08:55:51,621 INFO 7504 [egg-watcher:agent] watcher start success
 2020-06-23 08:55:51,642 INFO 7504 [egg:core] dump config after ready, 12ms
+2020-06-24 09:24:34,298 INFO 10672 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-24 09:24:34,319 INFO 10672 [egg:core] dump config after load, 12ms
+2020-06-24 09:24:34,582 INFO 10672 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"]
+2020-06-24 09:24:34,582 INFO 10672 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app"
+2020-06-24 09:24:34,583 INFO 10672 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config"
+2020-06-24 09:24:34,583 INFO 10672 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks"
+2020-06-24 09:24:34,583 INFO 10672 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy"
+2020-06-24 09:24:34,583 INFO 10672 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
+2020-06-24 09:24:34,584 INFO 10672 [egg-watcher:agent] watcher start success
+2020-06-24 09:24:34,631 INFO 10672 [egg:core] dump config after ready, 36ms
+2020-06-24 10:56:55,309 INFO 7208 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-24 10:56:55,325 INFO 7208 [egg:core] dump config after load, 7ms
+2020-06-24 10:56:56,461 INFO 7208 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"]
+2020-06-24 10:56:56,461 INFO 7208 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app"
+2020-06-24 10:56:56,462 INFO 7208 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config"
+2020-06-24 10:56:56,462 INFO 7208 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks"
+2020-06-24 10:56:56,462 INFO 7208 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy"
+2020-06-24 10:56:56,462 INFO 7208 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
+2020-06-24 10:56:56,463 INFO 7208 [egg-watcher:agent] watcher start success
+2020-06-24 10:56:56,490 INFO 7208 [egg:core] dump config after ready, 10ms
+2020-06-24 13:57:15,295 INFO 9992 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-24 13:57:15,312 INFO 9992 [egg:core] dump config after load, 10ms
+2020-06-24 13:57:15,542 INFO 9992 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"]
+2020-06-24 13:57:15,542 INFO 9992 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app"
+2020-06-24 13:57:15,542 INFO 9992 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config"
+2020-06-24 13:57:15,543 INFO 9992 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks"
+2020-06-24 13:57:15,543 INFO 9992 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy"
+2020-06-24 13:57:15,543 INFO 9992 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
+2020-06-24 13:57:15,543 INFO 9992 [egg-watcher:agent] watcher start success
+2020-06-24 13:57:15,605 INFO 9992 [egg:core] dump config after ready, 23ms
+2020-06-24 13:58:14,961 INFO 9076 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-24 13:58:14,971 INFO 9076 [egg:core] dump config after load, 6ms
+2020-06-24 13:58:15,024 INFO 9076 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"]
+2020-06-24 13:58:15,024 INFO 9076 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app"
+2020-06-24 13:58:15,025 INFO 9076 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config"
+2020-06-24 13:58:15,025 INFO 9076 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks"
+2020-06-24 13:58:15,025 INFO 9076 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy"
+2020-06-24 13:58:15,025 INFO 9076 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
+2020-06-24 13:58:15,026 INFO 9076 [egg-watcher:agent] watcher start success
+2020-06-24 13:58:15,049 INFO 9076 [egg:core] dump config after ready, 11ms
+2020-06-24 14:08:17,987 INFO 8624 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-24 14:08:18,090 INFO 8624 [egg:core] dump config after load, 34ms
+2020-06-24 14:08:18,363 INFO 8624 [egg-watcher] Start watching: ["C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy","C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"]
+2020-06-24 14:08:18,363 INFO 8624 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app"
+2020-06-24 14:08:18,363 INFO 8624 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\config"
+2020-06-24 14:08:18,364 INFO 8624 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks"
+2020-06-24 14:08:18,364 INFO 8624 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\mocks_proxy"
+2020-06-24 14:08:18,364 INFO 8624 [egg-watcher] Start watching: "C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\app.js"
+2020-06-24 14:08:18,365 INFO 8624 [egg-watcher:agent] watcher start success
+2020-06-24 14:08:18,439 INFO 8624 [egg:core] dump config after ready, 55ms

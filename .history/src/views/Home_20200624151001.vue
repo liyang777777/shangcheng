@@ -1,6 +1,8 @@
 <template>
   <div class="All">
- 
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+  <p>{{ count }}</p>
+</van-pull-refresh>
     <div>
       <Nav></Nav>
     </div>
@@ -38,7 +40,7 @@ import Snacks from "../components/Snacks";
 import Fruits from "../components/Fruits";
 import Dap from "../components/Dap";
 import Hgo from "../components/Hgo";
-
+import { Toast } from 'vant';
 
 export default {
   name: "",
@@ -60,7 +62,13 @@ export default {
     };
   },
   methods: {
-     
+      onRefresh() {
+      setTimeout(() => {
+        Toast('刷新成功');
+        this.isLoading = false;
+        this.count++;
+      }, 1000);
+    },
   },
   mounted() {
     this.$api

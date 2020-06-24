@@ -35,6 +35,24 @@ export default {
   computed: {
     recommend() {
       return this.$store.state.recommend;
+    },
+    floor1() {
+      return this.$store.state.floor1;
+    },
+    floor2() {
+      return this.$store.state.floor2;
+    },
+    floor3() {
+      return this.$store.state.floor3;
+    },
+    floorNameFloor1() {
+      return this.$store.state.floorNameFloor1;
+    },
+    floorNameFloor2() {
+      return this.$store.state.floorNameFloor2;
+    },
+    floorNameFloor3() {
+      return this.$store.state.floorNameFloor3;
     }
   }
 };
@@ -61,4 +79,5 @@ export default {
   margin-left: 60px;
   text-decoration: line-through;
 }
+
 </style>

@@ -45,7 +45,7 @@ export default new Vuex.Store({
     setFloorNameFloor3(state,data) {
       state.floorNameFloor3 = data
     },
-    setHotGoods(state,data) {
+    sethotGoods(state,data) {
       state.hotGoods = data
     },
   },

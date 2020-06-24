@@ -1,6 +1,5 @@
 <template>
   <div class="All">
- 
     <div>
       <Nav></Nav>
     </div>
@@ -38,8 +37,6 @@ import Snacks from "../components/Snacks";
 import Fruits from "../components/Fruits";
 import Dap from "../components/Dap";
 import Hgo from "../components/Hgo";
-
-
 export default {
   name: "",
   props: {},
@@ -54,14 +51,9 @@ export default {
     Dap
   },
   data() {
-    return {
-      count: '',
-      isLoading: false,
-    };
+    return {};
   },
-  methods: {
-     
-  },
+  methods: {},
   mounted() {
     this.$api
       .getDataHome()

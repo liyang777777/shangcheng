@@ -1,6 +1,5 @@
 <template>
   <div class="All">
- 
     <div>
       <Nav></Nav>
     </div>
@@ -37,9 +36,8 @@ import Prre from "../components/Prre";
 import Snacks from "../components/Snacks";
 import Fruits from "../components/Fruits";
 import Dap from "../components/Dap";
+
 import Hgo from "../components/Hgo";
-
-
 export default {
   name: "",
   props: {},
@@ -54,14 +52,9 @@ export default {
     Dap
   },
   data() {
-    return {
-      count: '',
-      isLoading: false,
-    };
+    return {};
   },
-  methods: {
-     
-  },
+  methods: {},
   mounted() {
     this.$api
       .getDataHome()
@@ -75,8 +68,7 @@ export default {
         this.$store.commit("setFloorNameFloor1", res.data.floorName.floor1);
         this.$store.commit("setFloorNameFloor2", res.data.floorName.floor2);
         this.$store.commit("setFloorNameFloor3", res.data.floorName.floor3);
-        this.$store.commit("setHotGoods",res.data.hotGoods)
-        console.log(res.data.hotGoods);
+        // console.log(res.data.floorName.floor1);
       })
       .catch(err => {
         console.log(err);

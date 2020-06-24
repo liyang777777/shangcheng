@@ -35,6 +35,24 @@ export default {
   computed: {
     recommend() {
       return this.$store.state.recommend;
+    },
+    floor1() {
+      return this.$store.state.floor1;
+    },
+    floor2() {
+      return this.$store.state.floor2;
+    },
+    floor3() {
+      return this.$store.state.floor3;
+    },
+    floorNameFloor1() {
+      return this.$store.state.floorNameFloor1;
+    },
+    floorNameFloor2() {
+      return this.$store.state.floorNameFloor2;
+    },
+    floorNameFloor3() {
+      return this.$store.state.floorNameFloor3;
     }
   }
 };
@@ -60,5 +78,44 @@ export default {
   margin-top: -20px;
   margin-left: 60px;
   text-decoration: line-through;
+}
+.All1 {
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  display: flex;
+  margin-top: 120px;
+  margin-left: 10px;
+  color: rgb(243, 25, 25);
+}
+.All2 {
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  display: flex;
+  margin-top: 150px;
+  margin-left: 10px;
+  color: rgb(243, 25, 25);
+}
+.All3 {
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+  color: rgb(243, 25, 25);
+}
+.img1 {
+  width: 200px;
+  height: 200px;
+}
+.img2 {
+  width: 200px;
+  height: 200px;
+}
+.img3 {
+  width: 200px;
+  height: 200px;
 }
 </style>
