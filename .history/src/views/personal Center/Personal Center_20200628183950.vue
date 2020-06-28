@@ -42,19 +42,15 @@
     <div class="van">
       <div class="van1">
         <van-icon name="records" size="40" style="width:50px"></van-icon>
-        <span class="label1">全部订单</span>
       </div>
       <div class="van2">
         <van-icon name="points" size="40" style="width:50px"></van-icon>
-        <span class="label2">收藏商品</span>
       </div>
       <div class="van3">
         <van-icon name="cash-back-record" size="40" style="width:50px"></van-icon>
-        <span class="label3">地址管理</span>
       </div>
       <div class="van4">
         <van-icon name="gift-o" size="40" style="width:50px"></van-icon>
-        <span class="label4">最近浏览</span>
       </div>
     </div>
   </div>
@@ -158,11 +154,7 @@ export default {
 .box5 {
   margin-left: 25px;
 }
-.van {
+.van1 {
   margin-left: -330px;
-}
-.label1 {
-  
-  margin-top: -20px;
 }
 </style>

@@ -162,7 +162,6 @@ export default {
   margin-left: -330px;
 }
 .label1 {
-  
-  margin-top: -20px;
+  margin-top: -10px;
 }
 </style>

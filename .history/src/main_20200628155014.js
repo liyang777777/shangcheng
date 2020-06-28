@@ -13,7 +13,6 @@ import { Card } from 'vant';
 import { Icon } from 'vant';
 import { PullRefresh } from 'vant';
 import { List } from 'vant';
-import { Button } from 'vant';
 
 Vue.config.productionTip = false
 Vue.use(Vant);
@@ -27,7 +26,6 @@ Vue.use(Card);
 Vue.use(Icon);
 Vue.use(PullRefresh);
 Vue.use(List);
-Vue.use(Button);
 
 new Vue({
   router,

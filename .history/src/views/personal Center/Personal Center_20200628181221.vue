@@ -39,24 +39,6 @@
       <span class="box4">评价</span>
       <span class="box5">已完成</span>
     </div>
-    <div class="van">
-      <div class="van1">
-        <van-icon name="records" size="40" style="width:50px"></van-icon>
-        <span class="label1">全部订单</span>
-      </div>
-      <div class="van2">
-        <van-icon name="points" size="40" style="width:50px"></van-icon>
-        <span class="label2">收藏商品</span>
-      </div>
-      <div class="van3">
-        <van-icon name="cash-back-record" size="40" style="width:50px"></van-icon>
-        <span class="label3">地址管理</span>
-      </div>
-      <div class="van4">
-        <van-icon name="gift-o" size="40" style="width:50px"></van-icon>
-        <span class="label4">最近浏览</span>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -117,52 +99,25 @@ export default {
   width: 50px;
   height: 50px;
   margin-left: -320px;
-  margin-top: 15px;
 }
 .ipt2 {
   width: 50px;
   height: 50px;
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: -250px;
 }
 .ipt3 {
   width: 50px;
   height: 50px;
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: -320px;
 }
 .ipt4 {
   width: 50px;
   height: 50px;
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: -320px;
 }
 .ipt5 {
   width: 50px;
   height: 50px;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-.box1 {
-  margin-left: 25px;
-}
-.box2 {
-  margin-left: 25px;
-}
-.box3 {
-  margin-left: 25px;
-}
-.box4 {
-  margin-left: 25px;
-}
-.box5 {
-  margin-left: 25px;
-}
-.van {
-  margin-left: -330px;
-}
-.label1 {
-  
-  margin-top: -20px;
+  margin-left: -320px;
 }
 </style>
