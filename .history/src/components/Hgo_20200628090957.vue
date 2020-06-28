@@ -40,7 +40,4 @@ img {
   margin-left: 100px;
   margin-top: 180px;
 }
-box3 {
-  text-decoration: line-through;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="All">
-    <div ref="wrapper">
+    <div ref="wrapper" style="width: 100px">
       <slot></slot>
     </div>
     <div>
@@ -73,7 +73,7 @@ export default {
     return {
       count: "",
       isLoading: false,
-      
+      style: ''
     };
   },
   methods: {

@@ -14,8 +14,8 @@
 
 <script>
 import { Toast } from "vant";
-import City from "../views/city/City";
-import Search from "../views/search/Search";
+import City from '../views/city/City'
+import Search from '../views/search/Search'
 export default {
   name: "",
   props: {},
@@ -24,9 +24,13 @@ export default {
     Search
   },
   data() {
-    return {};
+    return {
+     
+    };
   },
-  methods: {},
+  methods: {
+   
+  },
   mounted() {},
   watch: {},
   computed: {}
@@ -34,4 +38,5 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+
 </style>

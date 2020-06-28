@@ -58,7 +58,6 @@ export default {
       default: null
     }
   },
-
   components: {
     Nav,
     Roc,
@@ -73,7 +72,7 @@ export default {
     return {
       count: "",
       isLoading: false,
-      
+      style: ''
     };
   },
   methods: {
@@ -98,7 +97,6 @@ export default {
       this.scroll && this.scroll.refresh();
     }
   },
-
   watch: {
     //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
     data() {
@@ -131,15 +129,7 @@ export default {
         this._initScroll();
       }, 20);
   },
-  watch: {
-    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
-    data() {
-      setTimeout(() => {
-        // this.scroll.refresh()
-        this.refresh();
-      }, 20);
-    }
-  },
+  watch: {},
   computed: {}
 };
 </script>

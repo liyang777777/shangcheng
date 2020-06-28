@@ -1,14 +1,14 @@
 <template>
   <!-- 热销商品 -->
   <div>
-    <div class="All">
+    <div>
       <div v-for="(item,index) in hotGoods" :key="index">
         <div>
           <img :src="item.image" class="img" />
         </div>
-        <div class="box1">￥{{item.mallPrice}}</div>
-        <div class="box2">{{item.name}}</div>
-        <div class="box3">￥{{item.price}}</div>
+        <div>￥{{item.mallPrice}}</div>
+        <div>{{item.name}}</div>
+        <div>￥{{item.price}}</div>
       </div>
     </div>
   </div>
@@ -34,13 +34,4 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-img {
-  width: 100px;
-  height: 100px;
-  margin-left: 100px;
-  margin-top: 180px;
-}
-box3 {
-  text-decoration: line-through;
-}
 </style>

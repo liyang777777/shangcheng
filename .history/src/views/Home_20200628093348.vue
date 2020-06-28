@@ -1,8 +1,6 @@
 <template>
   <div class="All">
-    <div ref="wrapper">
-      <slot></slot>
-    </div>
+ 
     <div>
       <Nav></Nav>
     </div>
@@ -40,25 +38,11 @@ import Snacks from "../components/Snacks";
 import Fruits from "../components/Fruits";
 import Dap from "../components/Dap";
 import Hgo from "../components/Hgo";
-import BScroll from "better-scroll";
+
 
 export default {
   name: "",
-  props: {
-    probeType: {
-      type: Number,
-      default: 1
-    },
-    click: {
-      type: Boolean,
-      default: true
-    },
-    data: {
-      type: Array,
-      default: null
-    }
-  },
-
+  props: {},
   components: {
     Nav,
     Roc,
@@ -71,42 +55,12 @@ export default {
   },
   data() {
     return {
-      count: "",
+      count: '',
       isLoading: false,
-      
     };
   },
   methods: {
-    //初始化滚动组件
-    _initScroll() {
-      if (!this.$refs.wrapper) {
-        return;
-      }
-      this.scroll = new BScroll(this.$refs.wrapper, {
-        probeType: this.robeType,
-        click: this.click
-      });
-    },
-    //所使用到的函数作用自行查看文档
-    enable() {
-      this.scroll && this.scroll.enable();
-    },
-    disable() {
-      this.scroll && this.scroll.disable();
-    },
-    refresh() {
-      this.scroll && this.scroll.refresh();
-    }
-  },
-
-  watch: {
-    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
-    data() {
-      setTimeout(() => {
-        // this.scroll.refresh()
-        this.refresh();
-      }, 20);
-    }
+     
   },
   mounted() {
     this.$api
@@ -121,25 +75,14 @@ export default {
         this.$store.commit("setFloorNameFloor1", res.data.floorName.floor1); //休闲食品
         this.$store.commit("setFloorNameFloor2", res.data.floorName.floor2); //新鲜水果
         this.$store.commit("setFloorNameFloor3", res.data.floorName.floor3); //营养奶品
-        this.$store.commit("setHotGoods", res.data.hotGoods); //热销商品
+        this.$store.commit("setHotGoods",res.data.hotGoods) //热销商品
         // console.log(res.data.hotGoods);
       })
       .catch(err => {
         console.log(err);
-      }),
-      setTimeout(() => {
-        this._initScroll();
-      }, 20);
+      });
   },
-  watch: {
-    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
-    data() {
-      setTimeout(() => {
-        // this.scroll.refresh()
-        this.refresh();
-      }, 20);
-    }
-  },
+  watch: {},
   computed: {}
 };
 </script>

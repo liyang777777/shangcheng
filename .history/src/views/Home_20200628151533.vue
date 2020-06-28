@@ -72,8 +72,7 @@ export default {
   data() {
     return {
       count: "",
-      isLoading: false,
-      
+      isLoading: false
     };
   },
   methods: {

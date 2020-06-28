@@ -14,19 +14,26 @@
 
 <script>
 import { Toast } from "vant";
-import City from "../views/city/City";
-import Search from "../views/search/Search";
+import City from '../views/city/City'
 export default {
   name: "",
   props: {},
   components: {
-    City,
-    Search
+    City
   },
   data() {
-    return {};
+    return {
+      value: ""
+    };
   },
-  methods: {},
+  methods: {
+    onSearch(val) {
+      Toast(val);
+    },
+    onCancel() {
+      Toast("搜索");
+    }
+  },
   mounted() {},
   watch: {},
   computed: {}
@@ -34,4 +41,10 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.box2 {
+  width: 300px;
+  height: 25px;
+  margin-left: 80px;
+  font-size: 20px;
+}
 </style>

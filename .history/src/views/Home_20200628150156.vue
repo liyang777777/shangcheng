@@ -1,8 +1,6 @@
 <template>
   <div class="All">
-    <div ref="wrapper">
-      <slot></slot>
-    </div>
+  
     <div>
       <Nav></Nav>
     </div>
@@ -44,21 +42,7 @@ import BScroll from "better-scroll";
 
 export default {
   name: "",
-  props: {
-    probeType: {
-      type: Number,
-      default: 1
-    },
-    click: {
-      type: Boolean,
-      default: true
-    },
-    data: {
-      type: Array,
-      default: null
-    }
-  },
-
+  props: {},
   components: {
     Nav,
     Roc,
@@ -72,42 +56,10 @@ export default {
   data() {
     return {
       count: "",
-      isLoading: false,
-      
+      isLoading: false
     };
   },
-  methods: {
-    //初始化滚动组件
-    _initScroll() {
-      if (!this.$refs.wrapper) {
-        return;
-      }
-      this.scroll = new BScroll(this.$refs.wrapper, {
-        probeType: this.robeType,
-        click: this.click
-      });
-    },
-    //所使用到的函数作用自行查看文档
-    enable() {
-      this.scroll && this.scroll.enable();
-    },
-    disable() {
-      this.scroll && this.scroll.disable();
-    },
-    refresh() {
-      this.scroll && this.scroll.refresh();
-    }
-  },
-
-  watch: {
-    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
-    data() {
-      setTimeout(() => {
-        // this.scroll.refresh()
-        this.refresh();
-      }, 20);
-    }
-  },
+  methods: {},
   mounted() {
     this.$api
       .getDataHome()
@@ -126,20 +78,9 @@ export default {
       })
       .catch(err => {
         console.log(err);
-      }),
-      setTimeout(() => {
-        this._initScroll();
-      }, 20);
+      });
   },
-  watch: {
-    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
-    data() {
-      setTimeout(() => {
-        // this.scroll.refresh()
-        this.refresh();
-      }, 20);
-    }
-  },
+  watch: {},
   computed: {}
 };
 </script>

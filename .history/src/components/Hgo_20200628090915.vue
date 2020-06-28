@@ -38,9 +38,6 @@ img {
   width: 100px;
   height: 100px;
   margin-left: 100px;
-  margin-top: 180px;
-}
-box3 {
-  text-decoration: line-through;
+  margin-top: 100px;
 }
 </style>
