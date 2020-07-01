@@ -121,3 +121,20 @@
 2020-06-28 08:56:41,883 INFO 11024 [egg-mongoose] instance[0] start successfully
 2020-06-28 08:56:41,887 INFO 11024 [egg-watcher:application] watcher start success
 2020-06-28 08:56:41,933 INFO 11024 [egg:core] dump config after ready, 39ms
+2020-06-30 08:44:04,917 INFO 8828 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-30 08:44:04,972 INFO 8828 [egg-multipart] stream mode enable
+2020-06-30 08:44:09,937 INFO 8828 [egg-mongoose] connecting mongodb://127.0.0.1/shoppingMall
+2020-06-30 08:44:14,698 INFO 8828 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\shangcheng\server\app\public
+2020-06-30 08:44:14,701 INFO 8828 [egg-security] use methodnoallow middleware
+2020-06-30 08:44:14,754 INFO 8828 [egg-security] use noopen middleware
+2020-06-30 08:44:14,757 INFO 8828 [egg-security] use nosniff middleware
+2020-06-30 08:44:14,816 INFO 8828 [egg-security] use xssProtection middleware
+2020-06-30 08:44:14,817 INFO 8828 [egg-security] use xframe middleware
+2020-06-30 08:44:14,817 INFO 8828 [egg-security] use dta middleware
+2020-06-30 08:44:14,818 INFO 8828 [egg-security] compose 6 middlewares into one security middleware
+2020-06-30 08:44:15,010 INFO 8828 [egg:core] dump config after load, 12ms
+2020-06-30 08:44:15,018 INFO 8828 [egg-mongoose] starting...
+2020-06-30 08:44:15,175 INFO 8828 [egg-mongoose] mongodb://127.0.0.1/shoppingMall connected successfully
+2020-06-30 08:44:15,258 INFO 8828 [egg-mongoose] instance[0] start successfully
+2020-06-30 08:44:15,296 INFO 8828 [egg-watcher:application] watcher start success
+2020-06-30 08:44:15,329 INFO 8828 [egg:core] dump config after ready, 26ms

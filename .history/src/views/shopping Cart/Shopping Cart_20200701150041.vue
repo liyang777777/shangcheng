@@ -47,10 +47,4 @@ export default {
   font-size: 20px;
   text-align: center;
 }
-.btn {
-  width: 150px;
-  height: 50px;
-  margin-left: 100px;
-  font-size: 18px;
-}
 </style>

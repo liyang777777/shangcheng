@@ -1,5 +1,8 @@
 <template>
   <div class="All">
+    <div ref="wrapper">
+      <slot></slot>
+    </div>
     <!-- 顶部 -->
     <div>
       <Nav></Nav>
@@ -32,12 +35,6 @@
     <div>
       <Hgo></Hgo>
     </div>
-    <!-- 下拉刷新 -->
-    <div ref="wrapper" class="wrapper">
-      <div class="cont">
-        <van-pull-refresh v-model="isLoading" @refresh="onRefresh"></van-pull-refresh>
-      </div>
-    </div>
     <!-- 底部栏 -->
     <div>
       <buttom></buttom>
@@ -57,10 +54,22 @@ import Dap from "../components/Dap";
 import Hgo from "../components/Hgo";
 import BScroll from "better-scroll";
 import buttom from "../components/buttom";
-
 export default {
   name: "",
-  props: {},
+  props: {
+    probeType: {
+      type: Number,
+      default: 1
+    },
+    click: {
+      type: Boolean,
+      default: true
+    },
+    data: {
+      type: Array,
+      default: null
+    }
+  },
 
   components: {
     Nav,
@@ -82,15 +91,47 @@ export default {
     };
   },
   methods: {
+    //初始化滚动组件
+    _initScroll() {
+      if (!this.$refs.wrapper) {
+        return;
+      }
+      this.scroll = new BScroll(this.$refs.wrapper, {
+        probeType: this.robeType,
+        click: this.click
+      });
+    },
+    //所使用到的函数作用自行查看文档
+    enable() {
+      this.scroll && this.scroll.enable();
+    },
+    disable() {
+      this.scroll && this.scroll.disable();
+    },
+    refresh() {
+      this.scroll && this.scroll.refresh();
+    },
+
     onRefresh() {
-      setTimeout(() => {
-        Toast("刷新成功");
-        this.isLoading = false;
-      }, 1000);
+      // 清空列表数据
+      this.finished = false;
+
+      // 重新加载数据
+      // 将 loading 设置为 true，表示处于加载状态
+      this.loading = true;
+      this.onLoad();
     }
   },
 
-  watch: {},
+  watch: {
+    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
+    data() {
+      setTimeout(() => {
+        // this.scroll.refresh()
+        this.refresh();
+      }, 20);
+    }
+  },
   mounted() {
     this.$api
       .getDataHome()
@@ -110,19 +151,22 @@ export default {
       .catch(err => {
         console.log(err);
       }),
-      new BScroll(this.$refs.wrapper, {
-        scrollY: true, //上下滑动
-        click: true //点击为true才能滑动
-      })
-      // this.$router.push("Classification");
+      setTimeout(() => {
+        this._initScroll();
+      }, 20);
   },
-  watch: {},
+  watch: {
+    //观察传入的数据，一旦数据发生变化，重新渲染滚动组件
+    data() {
+      setTimeout(() => {
+        // this.scroll.refresh()
+        this.refresh();
+      }, 20);
+    }
+  },
   computed: {}
 };
 </script>
 
 <style scoped lang='scss'>
-.wrapper {
-  height: 670px;
-}
 </style>

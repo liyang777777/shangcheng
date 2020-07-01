@@ -57,7 +57,7 @@ import Dap from "../components/Dap";
 import Hgo from "../components/Hgo";
 import BScroll from "better-scroll";
 import buttom from "../components/buttom";
-
+import { Toast } from "vant";
 export default {
   name: "",
   props: {},
@@ -113,8 +113,7 @@ export default {
       new BScroll(this.$refs.wrapper, {
         scrollY: true, //上下滑动
         click: true //点击为true才能滑动
-      })
-      // this.$router.push("Classification");
+      });
   },
   watch: {},
   computed: {}

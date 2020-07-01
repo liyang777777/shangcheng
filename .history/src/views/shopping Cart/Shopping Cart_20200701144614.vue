@@ -4,13 +4,6 @@
     <div class="shopping">
       <span>购物车</span>
     </div>
-    <div>
-      <img src="../../assets/timg.jpg" class="img" />
-      <div class="box">您的购物车还是空的哦</div>
-      <div>
-        <van-button round type="info" class="btn">去购物</van-button>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -36,21 +29,5 @@ export default {
   background: antiquewhite;
   font-size: 20px;
   text-align: center;
-}
-.img {
-  width: 375px;
-  height: 300px;
-}
-.box {
-  width: 375px;
-  height: 50px;
-  font-size: 20px;
-  text-align: center;
-}
-.btn {
-  width: 150px;
-  height: 50px;
-  margin-left: 100px;
-  font-size: 18px;
 }
 </style>

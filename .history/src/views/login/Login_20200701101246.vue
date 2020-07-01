@@ -133,7 +133,7 @@ export default {
           } else {
             Notify({ type: "danger", message: res.msg });
           }
-          // console.log(res)
+          console.log(res)
         })
         .catch(err => {
           console.log(err);
@@ -145,7 +145,7 @@ export default {
         return;
       }
       this.$api
-        .getLogin({
+        .login({
           nickname: this.nickname,
           password: this.password,
           verify: this.verify

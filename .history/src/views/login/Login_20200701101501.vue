@@ -145,7 +145,7 @@ export default {
         return;
       }
       this.$api
-        .getLogin({
+        .login({
           nickname: this.nickname,
           password: this.password,
           verify: this.verify

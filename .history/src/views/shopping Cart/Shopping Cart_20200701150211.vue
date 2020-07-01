@@ -48,9 +48,8 @@ export default {
   text-align: center;
 }
 .btn {
-  width: 150px;
+  width: 50px;
   height: 50px;
-  margin-left: 100px;
-  font-size: 18px;
+  text-align: center;
 }
 </style>

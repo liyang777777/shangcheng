@@ -30,7 +30,7 @@ export default {
     },
     //  获取登录注册默认验证码
     getDataCode() {
-        return service.get('/verify')
+        return service.get('/v1/verify')
     },
     // 查询用户收货地址
     getDataCustomer() {

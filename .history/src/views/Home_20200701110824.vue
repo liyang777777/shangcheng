@@ -113,8 +113,8 @@ export default {
       new BScroll(this.$refs.wrapper, {
         scrollY: true, //上下滑动
         click: true //点击为true才能滑动
-      })
-      // this.$router.push("Classification");
+      }),
+      this.$router.push("Classification");
   },
   watch: {},
   computed: {}

@@ -98,7 +98,7 @@ export default {
         .getDataCode()
         .then(res => {
           this.sms = res;
-          // console.log(res);
+          console.log(res);
         })
         .catch(err => {
           console.log(err);
@@ -115,7 +115,7 @@ export default {
         }
       }, 1000);
     },
-    upgotoHome() {
+    getRegister() {
       if (this.nickname === "" || this.password === "" || this.verify === "") {
         Notify({ type: "danger", message: "请输入完整信息" });
         return;
@@ -133,7 +133,7 @@ export default {
           } else {
             Notify({ type: "danger", message: res.msg });
           }
-          // console.log(res)
+          console.log(res)
         })
         .catch(err => {
           console.log(err);
@@ -145,7 +145,7 @@ export default {
         return;
       }
       this.$api
-        .getLogin({
+        .login({
           nickname: this.nickname,
           password: this.password,
           verify: this.verify

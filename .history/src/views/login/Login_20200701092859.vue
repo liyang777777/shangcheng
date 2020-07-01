@@ -95,10 +95,10 @@ export default {
     },
     getverify() {
       this.$api
-        .getDataCode()
+        .verify()
         .then(res => {
           this.sms = res;
-          // console.log(res);
+          console.log(res);
         })
         .catch(err => {
           console.log(err);
@@ -133,11 +133,9 @@ export default {
           } else {
             Notify({ type: "danger", message: res.msg });
           }
-          // console.log(res)
+          console.log(res)
         })
-        .catch(err => {
-          console.log(err);
-        });
+        .catch();
     },
     ingotoHome() {
       if (this.nickname === "" || this.password === "" || this.verify === "") {
@@ -145,7 +143,7 @@ export default {
         return;
       }
       this.$api
-        .getLogin({
+        .login({
           nickname: this.nickname,
           password: this.password,
           verify: this.verify
@@ -161,15 +159,11 @@ export default {
           }
           console.log(res);
         })
-        .catch(err => {
-          console.log(err);
-        });
+        .catch();
     }
   },
   mounted() {
     this.getverify();
-   
-    
   },
   watch: {},
   computed: {}
