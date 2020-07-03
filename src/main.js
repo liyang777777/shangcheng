@@ -1,39 +1,40 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
 import Vant from 'vant';
 import 'vant/lib/index.css';
-import api from '../src/http/api'
+import api from './http/api'
 import { Form } from 'vant';
-import { Search } from 'vant';
-import { Swipe, SwipeItem } from 'vant';
-import { Image as VanImage } from 'vant';
-import { Card } from 'vant';
-import { Icon } from 'vant';
+import { Notify } from 'vant';//vant的消息通知
 import { PullRefresh } from 'vant';
-import { List } from 'vant';
-import { Button } from 'vant';
-import { Sidebar, SidebarItem } from 'vant';
-import { Tabbar, TabbarItem } from 'vant';
+import { Lazyload } from 'vant';
+import { Dialog } from 'vant';  //弹出框
+import { Area } from 'vant';
+import { Checkbox, CheckboxGroup } from 'vant';
+import { AddressList } from 'vant';
+import { Toast } from 'vant';
+import utils from './utils'
 
+
+Vue.prototype.$utils = utils
+Vue.use(AddressList);
+
+Vue.use(Checkbox);
+Vue.use(CheckboxGroup);
+
+Vue.use(Area);
+Vue.use(Toast);
+
+Vue.use(Lazyload);
+Vue.use(Dialog);   //弹出框
+Vue.use(Form);
+Vue.use(Notify);//vant的消息通知
 Vue.config.productionTip = false
 Vue.use(Vant);
 Vue.prototype.$api = api
-Vue.use(Form);
-Vue.use(Search);
-Vue.use(Swipe);
-Vue.use(SwipeItem);
-Vue.use(VanImage);
-Vue.use(Card);
-Vue.use(Icon);
 Vue.use(PullRefresh);
-Vue.use(List);
-Vue.use(Button);
-Vue.use(Sidebar);
-Vue.use(SidebarItem);
-Vue.use(Tabbar);
-Vue.use(TabbarItem);
+Vue.prototype.$bus = new Vue()
 
 new Vue({
   router,

@@ -5,49 +5,43 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    slides: [],
-    category: [],
-    recommend: [],
-    floor1: [],
-    floor2: [],
-    floor3: [],
-    floorNameFloor1: [],
-    floorNameFloor2: [],
-    floorNameFloor3: [],
-    hotGoods: []
+    slides:[],
+    category:[],
+    recommend:[],
+    hotGoods:[],
+    city:[],
+   shopList:[],
+   cartNum:0,
+  //  list:[]
   },
-  
   mutations: {
-    setSlides(state,data) {
+    setSlides(state,data){
       state.slides = data
     },
-    setCategory(state,data) {
+    setCategory(state,data){
       state.category = data
     },
-    setRecommend(state,data) {
+    setRecommend(state,data){
       state.recommend = data
     },
-    setFloor1(state,data) {
-      state.floor1 = data
-    },
-    setFloor2(state,data) {
-      state.floor2 = data
-    },
-    setFloor3(state,data) {
-      state.floor3 = data
-    },
-    setFloorNameFloor1(state,data) {
-      state.floorNameFloor1 = data
-    },
-    setFloorNameFloor2(state,data) {
-      state.floorNameFloor2 = data
-    },
-    setFloorNameFloor3(state,data) {
-      state.floorNameFloor3 = data
-    },
-    setHotGoods(state,data) {
+    setHotGoods(state,data){
       state.hotGoods = data
     },
+    setCity(state,data){
+      state.city = data
+    },
+   setShopList(state,data){
+     state.shopList = data
+   },
+   setCartNum(state,data){
+     state.cartNum =data
+   },
+   addCartNum(state){
+     state.cartNum += 1
+   },
+  //  setList(state,data){
+  //    state.list = data
+  //  }
   },
   actions: {
   },
