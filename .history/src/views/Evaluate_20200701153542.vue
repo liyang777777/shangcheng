@@ -5,7 +5,7 @@
       <van-nav-bar title="评价中心" left-text left-arrow @click-left="onClickLeft" />
     </div>
     <div>
-      <img src="../assets/log3.jpg" alt class="img" />
+      <img src="../assets/买卖.png" alt class="img" />
     </div>
     <div class="tab">
       <van-tabs v-model="active">

@@ -206,3 +206,37 @@
 2020-07-02 10:12:30,850 INFO 12828 [egg-mongoose] instance[0] start successfully
 2020-07-02 10:12:30,861 INFO 12828 [egg-watcher:application] watcher start success
 2020-07-02 10:12:30,883 INFO 12828 [egg:core] dump config after ready, 13ms
+2020-07-03 08:52:05,363 INFO 12896 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-07-03 08:52:05,409 INFO 12896 [egg-multipart] stream mode enable
+2020-07-03 08:52:10,226 INFO 12896 [egg-mongoose] connecting mongodb://127.0.0.1/shoppingMall
+2020-07-03 08:52:13,447 INFO 12896 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\shangcheng\server\app\public
+2020-07-03 08:52:13,451 INFO 12896 [egg-security] use methodnoallow middleware
+2020-07-03 08:52:13,470 INFO 12896 [egg-security] use noopen middleware
+2020-07-03 08:52:13,473 INFO 12896 [egg-security] use nosniff middleware
+2020-07-03 08:52:13,476 INFO 12896 [egg-security] use xssProtection middleware
+2020-07-03 08:52:13,477 INFO 12896 [egg-security] use xframe middleware
+2020-07-03 08:52:13,479 INFO 12896 [egg-security] use dta middleware
+2020-07-03 08:52:13,479 INFO 12896 [egg-security] compose 6 middlewares into one security middleware
+2020-07-03 08:52:13,619 INFO 12896 [egg:core] dump config after load, 7ms
+2020-07-03 08:52:13,631 INFO 12896 [egg-mongoose] starting...
+2020-07-03 08:52:13,767 INFO 12896 [egg-mongoose] mongodb://127.0.0.1/shoppingMall connected successfully
+2020-07-03 08:52:13,776 INFO 12896 [egg-mongoose] instance[0] start successfully
+2020-07-03 08:52:13,813 INFO 12896 [egg-watcher:application] watcher start success
+2020-07-03 08:52:13,858 INFO 12896 [egg:core] dump config after ready, 36ms
+2020-07-03 11:19:36,168 INFO 8544 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\shangcheng\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-07-03 11:19:36,216 INFO 8544 [egg-multipart] stream mode enable
+2020-07-03 11:19:40,973 INFO 8544 [egg-mongoose] connecting mongodb://127.0.0.1/shoppingMall
+2020-07-03 11:19:43,993 INFO 8544 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\shangcheng\server\app\public
+2020-07-03 11:19:44,008 INFO 8544 [egg-security] use methodnoallow middleware
+2020-07-03 11:19:44,019 INFO 8544 [egg-security] use noopen middleware
+2020-07-03 11:19:44,022 INFO 8544 [egg-security] use nosniff middleware
+2020-07-03 11:19:44,024 INFO 8544 [egg-security] use xssProtection middleware
+2020-07-03 11:19:44,026 INFO 8544 [egg-security] use xframe middleware
+2020-07-03 11:19:44,027 INFO 8544 [egg-security] use dta middleware
+2020-07-03 11:19:44,027 INFO 8544 [egg-security] compose 6 middlewares into one security middleware
+2020-07-03 11:19:44,183 INFO 8544 [egg:core] dump config after load, 18ms
+2020-07-03 11:19:44,196 INFO 8544 [egg-mongoose] starting...
+2020-07-03 11:19:44,357 INFO 8544 [egg-mongoose] mongodb://127.0.0.1/shoppingMall connected successfully
+2020-07-03 11:19:44,393 INFO 8544 [egg-mongoose] instance[0] start successfully
+2020-07-03 11:19:44,420 INFO 8544 [egg-watcher:application] watcher start success
+2020-07-03 11:19:44,462 INFO 8544 [egg:core] dump config after ready, 39ms

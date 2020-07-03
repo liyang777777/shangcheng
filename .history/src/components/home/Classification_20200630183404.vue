@@ -10,7 +10,7 @@
           <div class="name">{{item.mallCategoryName}}</div>
         </div>
       </div>
-			<img src="http://images.baixingliangfan.cn/advertesPicture/20180404/20180404085441_850.gif" class="gif">
+			<img src=http://images.baixingliangfan.cn/advertesPicture/20180404/20180404085441_850.gif alt="" class="gif">
     </div>
   </div>
 </template>

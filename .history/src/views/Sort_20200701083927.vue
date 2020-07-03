@@ -4,27 +4,29 @@
     <!-- 顶部title -->
     <div class="top">商品分类</div>
 
-    <!-- 侧面导航 -->
-    <div class="SideNavigation">
-      <div>
-        <van-sidebar v-model="activeKey">
-          <div v-for="(item,index) in list" :key="index">
-            <van-sidebar-item :title="item.mallCategoryName" @click="sidebar(item,index)" />
-          </div>
-        </van-sidebar>
-      </div>
+    
 
-      <div class="tab" v-if="list[activeKey]">
-        <van-tabs v-model="active" @change="topTab">
-          <div v-for="(item,index) in list[activeKey].bxMallSubDto" :key="index">
-            <div class="name">
-              <van-tab :title="item.mallSubName" :name="item.mallSubId">
-                <!-- 内容 -->
-                <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-                  <!-- 下拉刷新 -->
+      <!-- 侧面导航 -->
+      <div class="SideNavigation">
+        <div>
+          <van-sidebar v-model="activeKey">
+            <div v-for="(item,index) in list" :key="index">
+              <van-sidebar-item :title="item.mallCategoryName" @click="sidebar(item,index)" />
+            </div>
+          </van-sidebar>
+        </div>
+
+        <div class="tab" v-if="list[activeKey]">
+          <van-tabs v-model="active" @change="topTab">
+            <div v-for="(item,index) in list[activeKey].bxMallSubDto" :key="index">
+              <div class="name">
+                <van-tab :title="item.mallSubName" :name="item.mallSubId">
+                  <!-- 内容 -->
+                  <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+      <!-- 下拉刷新 -->
                   <div v-for="(item,index) in baby" :key="index" class="baby">
                     <div class="babyimgAll">
-                      <img :src="item.image_path" alt class="babyimg" @click="gotoDetails(item)" />
+                      <img :src="item.image_path" alt class="babyimg" @click="gotoDetails(item)"/>
                     </div>
                     <div class="name_price">
                       <div>{{item.name}}</div>
@@ -34,13 +36,14 @@
                       </div>
                     </div>
                   </div>
-                </van-pull-refresh>
-              </van-tab>
+                  </van-pull-refresh>
+                </van-tab>
+              </div>
             </div>
-          </div>
-        </van-tabs>
+          </van-tabs>
+        </div>
       </div>
-    </div>
+    
 
     <!-- 底部导航 -->
     <div class="dav">
@@ -80,7 +83,7 @@ export default {
     sidebar(item) {
       this.id = item.bxMallSubDto[0].mallSubId;
       this.getData();
-      this.active = 0;
+      this.active = 0
     },
 
     //分类商品请求数据
@@ -101,13 +104,14 @@ export default {
       this.id = name;
       console.log(this.id);
       this.getData();
+      
     },
     // 点击跳转商品详情
-    gotoDetails(item) {
-      console.log(item);
-      this.$router.push({ path: "/details", query: { id: item.id } });
-
-      this.$utils.addViews(item); //保存商品浏览记录到localStorage
+     gotoDetails(item){
+      console.log(item)
+      this.$router.push({path:'/details',query:{id:item.id}})
+     
+     this.$utils.addViews(item)//保存商品浏览记录到localStorage
       // console.log(this.$utils);
     }
   },
@@ -116,16 +120,19 @@ export default {
     console.log(this.list);
     this.id = this.list[0].bxMallSubDto[0].mallSubId;
     console.log(this.id);
-    if (this.$route.query.id) {
-      this.activeKey = this.$route.query.id;
+    if (this.$route.query.id){
+      this.activeKey = this.$route.query.id
       this.id = this.list[this.activeKey].bxMallSubDto[0].mallSubId;
       this.getData();
-    } else {
-      this.activeKey === 0;
+    }
+    else{
+      this.activeKey === 0
     }
     // console.log(this.category[0].bxMallSubDto[0].mallSubId);
-
+    
     this.getData();
+
+    
   },
   watch: {},
   computed: {}
@@ -154,13 +161,13 @@ export default {
 .tab {
   width: 100%;
   margin-left: 104px;
-  margin-top: 60px;
-  background: white;
+    margin-top: 60px;
+    background: white;
 }
 .van-sidebar {
   width: 27.667vw;
   height: 100vh;
-  background: rgb(247, 248, 250);
+  background: rgb(247,248,250);
 }
 .name {
   width: 100%;
@@ -202,7 +209,7 @@ export default {
   line-height: 30px;
   color: #000;
 }
-.dav {
+.dav{
   position: fixed;
   bottom: -30px;
 }
